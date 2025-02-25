@@ -200,7 +200,12 @@ local visual_mappings = {
   ["p"] = [["_dP]],
 }
 
-local insert_mappings = {}
+local insert_mappings = {
+  ["<C-h>"] = { "<Esc><C-w><C-h>", desc = "Move focus to the left window" },
+  ["<C-l>"] = { "<Esc><C-w><C-l>", desc = "Move focus to the right window" },
+  ["<C-j>"] = { "<Esc><C-w><C-j>", desc = "Move focus to the lower window" },
+  ["<C-k>"] = { "<Esc><C-w><C-k>", desc = "Move focus to the upper window" },
+}
 
 local pending_mappings = {}
 
